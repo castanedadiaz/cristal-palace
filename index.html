@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Website</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Hotel</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to our luxurious hotel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </section>
+
+  <section id="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room" onclick="toggleRoomInfo(1)">
+      <img src="room1.jpg" alt="Room 1">
+      <h3>Deluxe Room</h3>
+      <p>Starting from $100/night</p>
+      <p class="room-info" id="room-info-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="room" onclick="toggleRoomInfo(2)">
+      <img src="room2.jpg" alt="Room 2">
+      <h3>Executive Suite</h3>
+      <p>Starting from $150/night</p>
+      <p class="room-info" id="room-info-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <!-- Add more rooms as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Hotel Website. All rights reserved.</p>
+  </footer>
+
+  <script src="./assets/js/roomscript.js"></script>
+</body>
+</html>
