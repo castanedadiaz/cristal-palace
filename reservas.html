@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/reservas.css">
+</head>
+<body>
+    <h2>Hotel Reservation</h2>
+    <form id="reservationForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="checkIn">Check-in Date:</label>
+            <input type="text" id="checkIn" name="checkIn" required>
+        </div>
+        <div>
+            <label for="checkOut">Check-out Date:</label>
+            <input type="text" id="checkOut" name="checkOut" required>
+        </div>
+        <div>
+            <label for="garage">Garage Preference:</label>
+            <select id="garage" name="garage">
+                <option value="no">No preference</option>
+                <option value="yes">Yes, I need a garage</option>
+                <option value="no_need">No, I don't need a garage</option>
+            </select>
+        </div>
+        <div>
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div>
+            <label for="kidsUnderThree">Number of Kids Under 3:</label>
+            <select id="kidsUnderThree" name="kidsUnderThree">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div>
+            <label for="creditCardNumber">Credit Card Number:</label>
+            <input type="text" id="creditCardNumber" name="creditCardNumber" pattern="\d{16}" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required>
+        </div>
+        <div>
+            <label for="expiryMonth">Expiry Month:</label>
+            <select id="expiryMonth" name="expiryMonth" required>
+                <option value="">Select month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </div>
+        <div>
+            <label for="expiryYear">Expiry Year:</label>
+            <select id="expiryYear" name="expiryYear" required>
+                <option value="">Select year</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+            </select>
+        </div>
+        <div>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit Reservation</button>
+        </div>
+        <p>Su reserva está sujeta a confirmación. Gracias por elegirnos.</p>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./assets/js/reservas.js"></script>
+</b>
+</html>
