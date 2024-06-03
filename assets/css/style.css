@@ -37,16 +37,35 @@ box-shadow: 0 0 3px 3px #1a1a1a;
 
   
   .inicial {
-    margin: 20px;
-    border-style: dashed;
+    height:500px;
+    background-image: url(/assets/img/inicialcartel.jpg);
+    background-size:contain;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    border-style: solid;
     border-color: #fffcfc;
     border-radius: 9px;
     border-width: 1px;
     padding: 1rem;
-    background-color: white;
+    /* background-color: white; */
 
   }
 
+  .descripcionhotel {
+    text-align: left;
+    text-justify: auto;
+    width: 600px;
+    height: 360px;
+    margin: 15px;
+    margin-left:45%;
+    margin-top: 3%;
+    padding: 25px;
+    background-color: #ffffffd6;  
+    border-style: inset;
+    border-radius: 5%;
+    box-shadow: 2px 3px rgb(32, 32, 32);
+  }
 #imageninicial{
   display: block;
   margin-left: auto;
@@ -57,81 +76,129 @@ box-shadow: 0 0 3px 3px #1a1a1a;
 }
 
 #texto01 {
-padding: 22px 5px 12px 5px;
-text-align: justify;
-text-justify: inter-word;
+/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+color: #3b3a3a;
+/* text-transform: uppercase; */
+font-size: 18px;
+padding: 15px 5px 12px 25px;
 }
+
+.mapadiv {
+  background-image: url(/assets/img/map.gif);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+    height: 360px;
+}
+
+/* 
+#areamapa {
+  margin-top: 12px;
+  height: 360px;
+  background-image: url(/assets/img/map.gif);
+} */
 
 #mapaimagen{
   margin-top: 20px;
+  /* padding: 10px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-style: dotted;
+  border-style: solid;
   border-width: 1px;
-  border-radius: 40%;
+  border-radius: 10%;
 }
 
-.gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+#cartelgaleria {
+  margin-top: 40px;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
 }
 
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  width: 300px;
-  height: 200px;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.gallery-img {
+  height: 220px;
+  width: 290px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 70px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: visible; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: fixed;
+  top: 120px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.1);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .overlay {
-  opacity: 1;
-}
-
-.overlay:before {
-  content: '\f03e'; /* Font Awesome play icon */
-  font-family: FontAwesome;
-  font-size: 50px;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .overlay:before {
-  opacity: 1;
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 /* header {

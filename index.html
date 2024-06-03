@@ -36,70 +36,39 @@
     <section class="inicial">
         <!-- <h1>Promociones</h1> -->
         <div>
-        <img id="imageninicial" src="./assets/img/inicialcartel.jpg" alt="Hotel" height="200px" width="340px">
+        <!-- <img id="imageninicial" src="./assets/img/inicialcartel.jpg" alt="Hotel" height="280px" width="440px"> -->
       </div>
-      <div>
-        <p id="texto01"><strong>Cristal Palace Hotel</strong>, se encuentra ubicado en el barrio de Belgrano, uno de los mas reconocidos de Buenos Aires, cercanos a la los centros comerciales mas importantes de la cuidad.
-          Nos encontramos localizados en una zona estratégica a 200mts de la línea de subterráneo “D’, a solo 100mts de la importante avenida Cabildo, a 10 cuadras del estadio Monumental River Plate y con excelente acceso a los puntos mas importantes de la cuidad: La Rural, Centro del Convenciones Costa Salguero y rodeados de Universidades, Clínicas (FLENI, ROSSI, Sagrada Familia), restaurantes, cines, shopping como Unicenter, Dot, el Solar de la Badia, Alto Palermo.
+      <div id="texto01" class="descripcionhotel">
+        <p><p><h3><strong>CRISTAL PALACE HOTEL</strong><br><br></h3></p><p>Se encuentra ubicado en el barrio de Belgrano,uno de los más reconocidos de Buenos Aires, cercano a los centros comerciales mas importantes de la cuidad.</p>
+          <P>Nos encontramos ubicados en una zona estratégica con las siguientes carácteristicas,</P><br><em><ul><li>200 metros de la línea de subterráneo "D" </li><li>100 metros de Av. CABILDO</li><li>12 cuadras del estado MAS Monumental de <strong>RIVER PLATE</strong></li><li>Clínicas:ICBA - FLENI - ROSSI - SAGRADA FLIA.</li></ul></em><br>
           Nuestra ubicación permite el fácil acceso a la Av. General Paz, Panamericana, al Aeropuerto Nacional Jorge Newbery y Aeropuerto Internacional en Ezeiza, Terminal de Buses Retiro y Terminal de Buques y Cruceros.</p>
       </div>
     </section>
+    <div class="mapadiv">
     <div>
-      <a href="https://maps.app.goo.gl/Zn1vYZHeXA56LYUH8" target="_blank"><img id="mapaimagen" src="./assets/img/Mapa.png" alt="Cómo llego" height="310px" width="330px"></a>
+      <a href="https://maps.app.goo.gl/Zn1vYZHeXA56LYUH8" target="_blank"><img id="mapaimagen" src="./assets/img/Mapa.png" alt="Cómo llego" height="220px" width="240px"></a>
     </div>
+  </div>
+    <div id="clickgaleria"></div>
   <section id="galeria">
-    <h2 id="clickgaleria">Galería</h2>
-    <p></p>
+    <div class="Galeriasect">
+    <h2 id="cartelgaleria">GALERÍA</h2>
     <div class="gallery-container">
-      <div class="gallery-item">
-          <img src="image1.jpg" alt="Image 1">
-          <div class="overlay"></div>
-      </div>
-      <div class="gallery-item">
-          <img src="image2.jpg" alt="Image 2">
-          <div class="overlay"></div>
-      </div>
-      <div class="gallery-item">
-          <img src="image3.jpg" alt="Image 3">
-          <div class="overlay"></div>
-      </div>
-      <div class="gallery-item">
-        <img src="image1.jpg" alt="Image 4">
-        <div class="overlay"></div>
-    </div>
-    <div class="gallery-item">
-        <img src="image2.jpg" alt="Image 5">
-        <div class="overlay"></div>
-    </div>
-    <div class="gallery-item">
-        <img src="image3.jpg" alt="Image 6">
-        <div class="overlay"></div>
-    </div><div class="gallery-item">
-      <img src="image1.jpg" alt="Image 7">
-      <div class="overlay"></div>
+      <img class="gallery-img" src="./assets/img/cielo.jpg" alt="Image 1">
+      <img class="gallery-img" src="./assets/img/cielo.jpg" alt="Image 2">
+      <img class="gallery-img" src="./assets/img/cielo.jpg" alt="Image 3">
+      <img class="gallery-img" src="./assets/img/cielo.jpg" alt="Image 4">
+      <img class="gallery-img" src="./assets/img/cielo.jpg" alt="Image 5">
+      <img class="gallery-img" src="./assets/img/cielo.jpg" alt="Image 6">
+      <img class="gallery-img" src="./assets/img/cielo.jpg" alt="Image 7">
+      <img class="gallery-img" src="./assets/img/cielo.jpg" alt="Image 8">
   </div>
-  <div class="gallery-item">
-      <img src="image2.jpg" alt="Image 8">
-      <div class="overlay"></div>
+
+  <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
   </div>
-  <div class="gallery-item">
-      <img src="image3.jpg" alt="Image 9">
-      <div class="overlay"></div>
-  </div>
-  <div class="gallery-item">
-    <img src="image1.jpg" alt="Image 10">
-    <div class="overlay"></div>
 </div>
-<div class="gallery-item">
-    <img src="image2.jpg" alt="Image 11">
-    <div class="overlay"></div>
-</div>
-<div class="gallery-item">
-    <img src="image3.jpg" alt="Image 12">
-    <div class="overlay"></div>
-</div>
-      <!-- Add more gallery items here -->
-  </div>
   </section>
   <section id="rooms">
     <h2>Our Rooms</h2>
@@ -129,7 +98,7 @@
     <p>&copy; 2024 Hotel Website. All rights reserved.</p>
   </footer>
 
-  <script src="./assets/js/roomscript.js"></script>
+  <script src="./assets/js/scriptindex.js"></script>
 
 </body>
 </html>
