@@ -6,7 +6,10 @@
 }
 
 body {
-    font-family: "Inconsolata", monospace;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <900>;
+  font-style: normal;
     margin-top: 80px;
   }
 
@@ -52,6 +55,27 @@ box-shadow: 0 0 3px 3px #1a1a1a;
 
   }
 
+  .inicial01 {
+    height:500px;
+    background-image: url(/assets/img/thehab.jpeg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 50%;
+    margin-top: 0;
+    border-style: solid;
+    border-color: #fffcfc;
+    border-radius: 9px;
+    border-width: 1px;
+    padding: 1rem;
+    /* background-color: white; */
+
+  }
+
+  #icons{
+    display: flex;
+    justify-content: start;
+  }
+
   .descripcionhotel {
     text-align: left;
     text-justify: auto;
@@ -61,11 +85,27 @@ box-shadow: 0 0 3px 3px #1a1a1a;
     margin-left:45%;
     margin-top: 3%;
     padding: 25px;
-    background-color: #ffffffd6;  
-    border-style: inset;
-    border-radius: 5%;
-    box-shadow: 2px 3px rgb(32, 32, 32);
+    background-color: #28282be9;  
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2%;
   }
+
+  .descripcionhote2 {
+    text-align: left;
+    text-justify: auto;
+    width: 600px;
+    height: 360px;
+    margin: 15px;
+    margin-left:45%;
+    margin-top: 3%;
+    padding: 25px;
+    background-color: #28282be9;  
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2%;
+  }
+  
 #imageninicial{
   display: block;
   margin-left: auto;
@@ -77,10 +117,20 @@ box-shadow: 0 0 3px 3px #1a1a1a;
 
 #texto01 {
 /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-color: #3b3a3a;
+color: #ffffff;
 /* text-transform: uppercase; */
-font-size: 18px;
-padding: 15px 5px 12px 25px;
+font-size: 15px;
+padding: 45px 15px 12px 25px;
+text-align: justify;
+}
+
+h3{
+  color: #ffffff;
+  ;
+}
+
+h4{
+  color: #ffffff;
 }
 
 .mapadiv {
