@@ -21,9 +21,10 @@
             <div class="navbar-logo"> <img src="./assets/img/logo.png" alt="CristalPalace" width="140px" height="50px"></div>
             <ul class="navbar-links">
               <li><a href="#">Inicio</a></li>
+              <li><a href="#clickservicios">Servicios</a></li>
               <li><a href="#clickgaleria">Galería</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="#clickpromos">PROMOS</a></li>
+              <li><a href="#clickcontacto">Contacto</a></li>
             </ul>
             <div class="navbar-toggle" onclick="toggleNavbar()">
               <div class="toggle-icon"></div>
@@ -56,6 +57,7 @@
       <div>
       <!-- <img id="imageninicial" src="./assets/img/inicialcartel.jpg" alt="Hotel" height="280px" width="440px"> -->
     </div>
+    <div id="clickservicios"></div>
     <div id="texto02" class="descripcionhote2">
       <p><p><h3><strong>Servicios</strong><br><br></h3></p><p><h4>Desayuno:</h4><strong>Café,leche,mate cocido,te,agua y jugo. Yogurt,cereales,pan lactal,tostadas,mermelada,queso untable,huevo duro,fruta y medialunas</p></strong>
       <br>
@@ -93,32 +95,38 @@
   </div>
 </div>
   </section>
+  <h2 id="cartelgaleria">Promociones</h2>
+  <div id="clickpromos"></div>
   <section id="rooms">
-    <h2>Our Rooms</h2>
     <div class="room" onclick="toggleRoomInfo(1)">
-      <img src="room1.jpg" alt="Room 1">
-      <h3>Deluxe Room</h3>
-      <p>Starting from $100/night</p>
-      <p class="room-info" id="room-info-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="/assets/img/thehab.jpeg" alt="Room 1" height="240px" width="250px">
+      <h5>Habitación Doble o Triple</h5>
+      <p>Tarifa promocional</p>
+      <p class="room-info" id="room-info-1">Habitación totalmente equipada para dos o tres personas.</p>
     </div>
-    <div class="room" onclick="toggleRoomInfo(2)">
+    <!-- <div class="room" onclick="toggleRoomInfo(2)">
       <img src="room2.jpg" alt="Room 2">
       <h3>Executive Suite</h3>
       <p>Starting from $150/night</p>
       <p class="room-info" id="room-info-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+    </div> -->
     <!-- Add more rooms as needed -->
   </section>
   
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@cristalpalace.com</p>
-    <p>Phone: 123-456-7890</p>
+    <h2>Contacto</h2>
+    <div id="clickcontacto"></div>
+    <a href="mailto:info@cristalpalace.com"><p>Email: info@cristalpalace.com</p></a>
+    <p>Teléfono: +54 (11) 4786-1700</p>
+    <div id="icons">
+      <a href="https://www.instagram.com/cristalpalacehotelarg/" target="_blank"><img src="./assets/img/instagram.png" alt="Instagram" height="32px" width="32px"></a>
+      <a href="https://www.instagram.com/cristalpalacehotelarg/" target="_blank"><img src="./assets/img/whatsapp.png" alt="Instagram" height="32px" width="32px"></a>
+    </div>
   </section>
 </main>
   <footer>
-    <p>&copy; 2024 Hotel Website. All rights reserved.</p>
+    <p>&copy; 2024 Hotel Cristal Palace. All rights reserved.</p>
   </footer>
 
   <script src="./assets/js/scriptindex.js"></script>
